@@ -28,12 +28,12 @@ class PilotController {
     @PostMapping
     public Pilot addPilot(@RequestBody Pilot pilot) { return service.addPilot(pilot); }
 
-    // Método para actualizar un piloto
-    @CrossOrigin(origins = "*")
-    @PutMapping("/{id}")
-    public Pilot updatePilot(@PathVariable String id, @RequestBody Pilot pilot) {
-        return service.updatePilot(id, pilot);
-    }
+        // Método para actualizar un piloto
+        @CrossOrigin(origins = "*")
+        @PutMapping("/{id}")
+        public Pilot updatePilot(@PathVariable String id, @RequestBody Pilot pilot) {
+            return service.updatePilot(id, pilot);
+        }
 
     @CrossOrigin(origins = "*")
     @DeleteMapping("/{id}")
